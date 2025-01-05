@@ -10,10 +10,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         height: 100vh;
         width: 100vw;
         /* border: 1px solid black; */
+        
 }
 .main{
     height: auto;
@@ -27,7 +28,7 @@
     padding: 1rem;
     border-radius: 1.2rem;
     background-color: #474F7A;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     /* position: relative;
     top: -25%; */
 }
@@ -49,9 +50,10 @@
 input{
     width: 18rem;
     height: 3rem;
-    border: solid rgb(161, 159, 159);
+    border: 3px solid rgb(161, 159, 159);
     border-radius: 1rem;
     font-size: x-large;
+    outline: none;
     /* box-shadow: 5px 5px wheat; */
     
 }
@@ -64,6 +66,7 @@ input{
     background-color: #3E7B27;
     font-size: medium;
     margin-top: 5px;
+    outline:none;
 }
 
 .tasks{
@@ -93,4 +96,16 @@ input{
     margin: 10px;
     width: 8rem;
     height: 3.5rem;
+}
+
+.date_time{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.date_time .date{
+    margin-left: 1rem;
 }

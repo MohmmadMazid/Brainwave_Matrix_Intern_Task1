@@ -22,8 +22,8 @@ addbutton.addEventListener("click", (event) => {
     div.appendChild(h3);
     div.appendChild(button);
     todoDiv.appendChild(div);
+    input.value = "";
   }
-  input.value = "";
 });
 
 //deleting the task

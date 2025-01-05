@@ -1,8 +1,6 @@
 let input = document.querySelector(".entertask");
 let addbutton = document.querySelector(".add");
 let todoDiv = document.querySelector(".tasks");
-let tasks = document.querySelector(".tasks");
-let task = document.querySelector(".task");
 
 console.log(" input value", input.value);
 addbutton.addEventListener("click", (event) => {

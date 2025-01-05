@@ -18,7 +18,7 @@ addbutton.addEventListener("click", (event) => {
     h3.innerHTML = input.value;
     let button = document.createElement("button");
     button.classList.add("deletetodo");
-    button.innerHTML = "delete";
+    button.innerHTML = "remove";
     div.appendChild(h3);
     div.appendChild(button);
     todoDiv.appendChild(div);

@@ -24,25 +24,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
     border-radius: 1.2rem;
-    background-color: #474F7A;
-    /* overflow-y: auto; */
-    /* position: relative;
-    top: -25%; */
+    /* background-color: #474F7A; */
+    background-color: #5F6F65;
+    box-shadow: 5px 5px 20px 5px #629584;
 }
 .main .input .entertask, .add{
-    background-color: #474F7A;
+    /* background-color: #474F7A; */
+        background-color: #5F6F65;
 }
 .main .tasks .task{
-    background-color: #474F7A;
+    /* background-color: #474F7A; */
+        background-color: #5F6F65;
 }
 .input{
     width: 100%;
     margin: 0.8rem;
     padding: 0.8rem;
-    background-color: #474F7A;
+    /* background-color: #474F7A; */
+        background-color: #5F6F65;
     display: flex;
     justify-content: flex-end;
 }
@@ -51,10 +53,13 @@ input{
     width: 18rem;
     height: 3rem;
     border: 3px solid rgb(161, 159, 159);
-    border-radius: 1rem;
+    border-radius: 0.8rem;
     font-size: x-large;
     outline: none;
+    background-color: #DCE4C9 !important;
+    color: #C84C05;
     /* box-shadow: 5px 5px wheat; */
+    padding-left: 0.5rem;
     
 }
 .add{
@@ -84,7 +89,8 @@ input{
 
 }
 .task .todoItem,button{
-    background-color: #474F7A;
+    /* background-color: #474F7A; */
+        background-color: #5F6F65;
     padding: 1rem;
     font-size: x-large;
 }
@@ -96,6 +102,7 @@ input{
     margin: 10px;
     width: 8rem;
     height: 3.5rem;
+    padding-top: 0.8rem;
 }
 
 .date_time{

@@ -2,7 +2,8 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: #1F2544;
+    /* background-color: #1F2544; */
+    background-color: #080e2c;
     color: rgb(233, 227, 227);
     
 }
@@ -29,7 +30,7 @@
     border-radius: 1.2rem;
     /* background-color: #474F7A; */
     background-color: #5F6F65;
-    box-shadow: 5px 5px 20px 5px #629584;
+    /* box-shadow: 5px 5px 20px 5px #629584; */
 }
 .main .input .entertask, .add{
     /* background-color: #474F7A; */
@@ -40,13 +41,15 @@
         background-color: #5F6F65;
 }
 .input{
-    width: 100%;
+    width: 400PX;
     margin: 0.8rem;
     padding: 0.8rem;
     /* background-color: #474F7A; */
         background-color: #5F6F65;
     display: flex;
     justify-content: flex-end;
+    border-radius: 1rem;
+        box-shadow: 0px 5px 20px 15px #585858ae;
 }
 
 input{
@@ -68,7 +71,7 @@ input{
     height: 3rem;
     border-radius: 2rem;
     border: green;
-    background-color: #3E7B27;
+    background-color: #215f0b;
     font-size: medium;
     margin-top: 5px;
     outline:none;
@@ -95,11 +98,19 @@ input{
     font-size: x-large;
 }
 
-.task button{
+.task .deletetodo{
     background-color: brown;
     border-radius: 2rem;
     border: #1F2544;
     margin: 10px;
+    width: 8rem;
+    height: 3.5rem;
+    padding-top: 0.8rem;
+}
+.task .donetodo{
+    background-color: rgb(17, 171, 158);
+    border-radius: 2rem;
+    border: #1F2544;
     width: 8rem;
     height: 3.5rem;
     padding-top: 0.8rem;
@@ -115,4 +126,9 @@ input{
 
 .date_time .date{
     margin-left: 1rem;
+}
+
+.hrline{
+    width: 100%;
+    margin-top: 1rem;
 }

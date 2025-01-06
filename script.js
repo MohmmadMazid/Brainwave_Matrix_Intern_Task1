@@ -14,11 +14,15 @@ addbutton.addEventListener("click", (event) => {
   console.log(+input.value);
   if (input.value) {
     h3.innerHTML = input.value;
-    let button = document.createElement("button");
-    button.classList.add("deletetodo");
-    button.innerHTML = "remove";
+    let deletebutton = document.createElement("button");
+    let donebutton = document.createElement("button");
+    deletebutton.classList.add("deletetodo");
+    donebutton.classList.add("donetodo");
+    deletebutton.innerHTML = "remove";
+    donebutton.innerHTML = "done";
     div.appendChild(h3);
-    div.appendChild(button);
+    div.appendChild(deletebutton);
+    div.appendChild(donebutton);
     todoDiv.appendChild(div);
     input.value = "";
   }
@@ -38,3 +42,12 @@ let newtime = new Date();
 let val = newtime.toLocaleTimeString().split(":");
 date.innerHTML = newtime.toLocaleDateString();
 time.innerHTML = val[0] + ":" + val[1] + val[2].slice(2);
+
+//adding done property
+todoDiv.addEventListener("click", (e) => {
+  if (e.target && e.target.classList.contains("donetodo")) {
+    let task = e.target.parentElement.querySelector(".todoItem");
+    console.log(task);
+    task.innerHTML = "✅ " + task.innerHTML; // Prepend the done symbol to the task description
+  }
+});
